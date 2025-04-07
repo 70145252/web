@@ -1,0 +1,148 @@
+body {
+    font-family: sans-serif;
+    margin: 0px;
+    line-height: 1.6;
+    background-color: rgb(253, 246, 237);
+    color:rgb(50, 40, 30);
+}
+
+.header {
+    padding: 10px;
+    margin: 10px; 
+    background-color: rgb(51, 51, 51);
+    color: rgb(79, 70, 60);
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 1em 0px;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header nav ul li {
+    display: inline;
+    margin: 0px 15px;
+}
+
+.header nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.header a:hover{
+    transition: all ease-in-out 0.7s;
+    border: 2px solid rgba(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: x-large;
+}
+.main {
+   margin: 10px;
+   padding: 10px;
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 40px;
+    border: 4px solid rgb(0, 0, 0);
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    margin-bottom: 5px;
+}
+
+.tagline {
+    color: rgb(119, 119, 119);
+    font-style: italic;
+}
+
+#about,
+#skills,
+#education,
+#contact {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: rgb(51, 51, 51);
+    border-bottom: 2px solid rgb(238, 238, 238);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#skills li {
+    background-color: rgb(224, 224, 224);
+    color: rgb(51, 51, 51);
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+#education div {
+    margin-bottom: 15px;
+}
+
+#contact p {
+    margin-bottom: 10px;
+}
+#contact p a{
+    text-decoration: none;
+    color: black;
+}
+#contact  a:hover{
+    color: rgb(16, 212, 212);
+    transition: all ease-in-out 0.5s;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: x-large;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(51, 51, 51);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    position: sticky;
+
+}
+
+/* Basic Responsive Design */
+@media (max-width: 768px) {
+    .header nav ul li {
+        display: block;
+        margin: 10px 0px;
+    }
+
+    .projects-list {
+        grid-template-columns: 1fr;
+    }
+}
